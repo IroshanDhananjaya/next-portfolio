@@ -19,12 +19,13 @@ module.exports = {
       lg: "960px",
       xl: "1200px",
     },
-    fontFamily: {
-      primarry: "var(--font-jetbrainsMono)"
-    },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/assets/def.jpg')",
+      },
       colors: {
         primary: '#1c1c22',
+        background: '#000000',
         accent: {
           DEFAULT: '#00ff99',
           hover: '#00e187'

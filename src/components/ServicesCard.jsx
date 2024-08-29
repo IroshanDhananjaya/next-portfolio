@@ -1,6 +1,8 @@
 import React from 'react'
 import { Separator } from './ui/separator'
 import { Button } from './ui/button'
+import Image from "next/image";
+import Link from 'next/link';
 
 const services1 = [
     {
@@ -42,39 +44,37 @@ const services2 = [
 
 const ServicesCard = () => {
     return (
-        <div className='w-full'>
-            <div className='w-full flex flex-col mx-auto xl:flex-row items-center justify-between p-5'>
-                {
-                    services1.map((service, index) => {
-                        return (
-                            <div className='w-[100%] xl:w-[45%] h-[50%] text-center p-5'  key={index}>
-                                <div className='w-full flex justify-around mb-5'>
-                                    <h1 className='text-2xl font-extrabold'>{service.title}</h1>
-                                </div>
-                                <Separator className="bg-accent "/>
-                                <p className='m-4 text-sm'>{service.dec}</p>
-                                <Button className="text-sm">Contact Me</Button>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+        <div className='w-full h-full'>
+            <div className='flex flex-col xl:flex-row items-center justify-between gap-8 mt-5 truncate'>
+                <div className=' w-[300px] h-[300px] flex flex-col justify-end text-left p-5 rounded-lg bg-cyan-950'>
+                   <h1 className='text-8xl font-extrabold'>01</h1>
+                   <h1 className='text-1xl font-semibold mb-5'>Web Site Development</h1>
+                   <Link href="/contact"> <h1 className="text-sm - font-semibold text-accent"> Contact me</h1>
+                    </Link>
+                </div>
 
-            <div className='w-full flex mx-auto flex-col xl:flex-row items-center justify-between p-5'>
-                {
-                    services2.map((service, index) => {
-                        return (
-                            <div className='w-[100%] xl:w-[45%] h-[50%] text-center bg-primary/80 p-5' key={index}>
-                                <div className='w-full flex justify-center mb-5'>
-                                    <h1 className='text-2xl font-extrabold'>{service.title}</h1>
-                                </div>
-                                <Separator className="bg-accent "/>
-                                <p className='m-4 text-sm'>{service.dec}</p>
-                                <Button className="text-sm">Contact Me</Button>
-                            </div>
-                        )
-                    })
-                }
+                <div className=' w-[300px] h-[300px] flex flex-col justify-end text-left p-5 rounded-lg bg-cyan-950'>
+                   <h1 className='text-8xl font-extrabold'>02</h1>
+                   <h1 className='text-1xl font-semibold mb-5'>Web App Development</h1>
+                   <Link href="/contact"> <h1 className="text-sm - font-semibold text-accent"> Contact me</h1>
+                    </Link>
+                </div>
+
+                <div className=' w-[300px] h-[300px] flex flex-col justify-end text-left p-5 rounded-lg bg-cyan-950'>
+                   <h1 className='text-8xl font-extrabold'>03</h1>
+                   <h1 className='text-1xl font-semibold mb-5'>Mobile App Development</h1>
+                   <Link href="/contact"> <h1 className="text-sm - font-semibold text-accent"> Contact me</h1>
+                    </Link>
+                </div>
+
+                <div className=' w-[300px] h-[300px] flex flex-col justify-end text-left p-5 rounded-lg bg-cyan-950'>
+                   <h1 className='text-8xl font-extrabold'>04</h1>
+                   <h1 className='text-1xl font-semibold mb-5'>UI/UX Design</h1>
+                   <Link href="/contact"> <h1 className="text-sm - font-semibold text-accent"> Contact me</h1>
+                    </Link>
+                </div> 
+                
+
             </div>
 
         </div>

@@ -15,7 +15,7 @@ const Photo = () => {
               animate ={{opacity: 1, 
               transition: {delay: 2, duration: 0.4, ease: "easeInOut"}}}
             className="w-[398px] h-[398px] xl:w-[598px] xl:h-[598px] mix-blend-lighten rounded-full">
-                <Image src="/assets/image.png" priority quality={100} fill alt="" className="object-contain rounded-full"/>
+                <Image src="/assets/1.jpg" priority quality={100}  alt="" className="object-contain rounded-full w-10"/>
             </motion.div>
         </motion.div>
     </div>
