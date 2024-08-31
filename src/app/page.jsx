@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Photo from "@/components/Photo";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
@@ -10,9 +11,9 @@ export default function Home() {
   return (
     <section className="h-full container flex flex-col gap-8">
       <div className=" flex-col xl:flex-row  w-full  flex justify-around items-center gap-5">
-        <div className="xl:w-[30%] p-5 w-full bg-primary rounded-xl flex flex-col items-center justify-center gap-4">
-          <Image src="/assets/1.jpg" priority quality={100} width={500}
-            height={500} alt="" className="object-contain rounded-full w-[65%] mb-10" />
+        <div className="xl:w-[30%] p-4 w-full bg-primary rounded-xl flex flex-col items-center justify-center gap-4">
+          <Image src="/assets/2.jpg" priority quality={100} width={1000}
+            height={1000} alt="" className="object-contain rounded-full w-[60%] mb-5" />
           <h1 className="text-4xl text-center font-extrabold">Iroshan <br /> Dhananjaya</h1>
           <p className="text-sm text-center text-white/80">I am a Software Enginer based in <br /> Sri Lanka.</p>
           <div className="mb-8 xl:mb-0">
@@ -39,8 +40,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-primary rounded-xl">
+      <div className="w-full">
         <Projects/>
+      </div>
+
+      <div className="">
+        <Footer/>
       </div>
     </section>
   );

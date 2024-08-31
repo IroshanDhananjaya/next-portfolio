@@ -1,7 +1,5 @@
 'use client';
-
-import Image from 'next/image';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const projects = [
     {
@@ -24,15 +22,14 @@ const projects = [
 
 const Projects = () => {
     const [selectedFilter, setSelectedFilter] = useState('All');
-
     const handleFilterChange = (event) => {
         console.log(event)
         setSelectedFilter(event);
     };
     return (
-        <div className='flex flex-col items-center justify-center pt-10 gap-4'>
+        <div className='flex flex-col items-center justify-center pt-10 gap-4  bg-primary rounded-xl'>
             <h1 className='text-3xl xl:text-5xl font-extrabold'>Works & Projects</h1>
-            <p className='xl:w-[50%] text-center text-sm text-white/80'>Check out some of my design projects, meticulously crafted with love and dedication, each one reflecting the passion and soul I poured into every detail</p>
+            <p className='xl:w-[50%] text-center font-semibold text-sm text-white/50'>Check out some of my design projects, meticulously crafted with love and dedication, each one reflecting the passion and soul I poured into every detail</p>
 
             <div className='w-full p-5 pl-10 pr-10'>
                 <div className='flex items-center justify-center xl:justify-start gap-8'>

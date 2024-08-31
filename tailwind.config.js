@@ -24,7 +24,7 @@ module.exports = {
         'hero-pattern': "url('/assets/def.jpg')",
       },
       colors: {
-        primary: '#1c1c22',
+        primary: '#121214',
         background: '#000000',
         accent: {
           DEFAULT: '#00ff99',
