@@ -3,20 +3,29 @@ import { useState, useEffect } from 'react'
 
 const projects = [
     {
-        name: 'Portfolio Web Site',
+        name: 'Web site development',
         category: "Web",
+        img: 'bg-web-site-design'
     },
     {
-        name: 'Kottu hut New Year Web Site',
+        name: 'Web App development',
         category: "Web",
+        img: 'bg-web-app'
     },
     {
-        name: 'Car Rental Mobile App',
+        name: 'Mobile Application Development',
         category: "Mobile",
+        img: 'bg-mobile-app'
     },
     {
-        name: 'Car Rental Mobile App Design',
+        name: 'Web Site Design',
         category: "Design",
+        img: 'bg-web-design'
+    },
+    {
+        name: 'Mobile App Design',
+        category: "Design",
+        img: 'bg-mobile-design'
     },
 ]
 
@@ -40,12 +49,12 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='w-full grid grid-cols-1 xl:grid-cols-3 gap-8 p-5 pt-2'>
+            <div className='w-full grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-8 p-5 pt-2'>
 
                 {projects.map((project, index) => ((selectedFilter === 'All' || project.category.includes(selectedFilter)) ?
                     (
                         <div className=' border-2 hover:scale-105 ease-in duration-300 border-neutral-800 rounded-b-xl' key={index}>
-                            <div className='w-full h-[180px]  bg-hero-pattern bg-center bg-cover'></div>
+                            <div className={`w-full h-[180px]  ${project.img} bg-center bg-cover`}></div>
                             <p className='ml-5 mt-5  text-sm text-white/80'>{project.category}</p>
                             <h1 className='text-lg ml-5 font-semibold mb-5'>{project.name}</h1>
                         </div>

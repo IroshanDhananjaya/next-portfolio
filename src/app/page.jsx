@@ -10,7 +10,7 @@ import { FiDownload } from 'react-icons/fi'
 export default function Home() {
   return (
     <section className="h-full container flex flex-col gap-8">
-      <div className=" flex-col xl:flex-row  w-full  flex justify-around items-center gap-5">
+      <div className="flex-col md:flex-row mt-5  w-full  flex justify-around items-center gap-5">
         <div className="xl:w-[30%] p-4 w-full bg-primary rounded-xl flex flex-col items-center justify-center gap-4">
           <Image src="/assets/2.jpg" priority quality={100} width={1000}
             height={1000} alt="" className="object-contain rounded-full w-[60%] mb-5" />

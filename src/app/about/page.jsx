@@ -44,22 +44,25 @@ const Education = [
 const About = () => {
   return (
     <section className="h-full container flex flex-col gap-8">
-      <div className=" flex-col xl:flex-row  w-full  flex justify-around items-center gap-5">
-        <div className="xl:w-[30%] p-4 w-full bg-primary rounded-xl flex flex-col items-center justify-center">
+      <div className=" flex-col xl:flex-row lg:flex-row  w-full  flex justify-around items-center gap-5">
+        <div className="xl:w-[30%] p-4 w-full flex flex-col items-center justify-center">
           <Image src="/assets/2.jpg" priority quality={100} width={1000}
-            height={1000} alt="" className="object-contain rounded-full w-[70%] mb-5" />
+            height={1000} alt="" className="object-contain rounded-full w-[70%]  mb-5" />
         </div>
         <div className="xl:w-[70%] w-full flex flex-col justify-start gap-5">
-        <div className="xl:h-[100%] p-5 bg-primary rounded-xl flex flex-col items-start justify-center gap-8">
-          <h1 className='xl:text-6xl text-4xl font-semibold text-left'>I’m Iroshan Dhananjaya, <br></br>a software engineer.</h1>
-          <p className='text-lg font-semibold text-left text-white/50'>I am a San francisco-based product designer with a focus on web design, illustration, a visual development. 
-            I have a diverse range of experience having worked across various fields and industries.<br/><br/>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-            It has roots in a piece of classical Latin literature from 45 BC, 
-            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
-            looked up one of the more obscure Latin words, consectetur, from 
-            a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+        <div className="xl:h-[100%] p-5 bg-primary rounded-xl flex flex-col md:text-center items-center xl:items-start lg:items-start md:items-center sm:items-center justify-center gap-8">
+          <h1 className='xl:text-6xl text-4xl font-semibold xl:text-left md:text-center sm:text-center'>I’m Iroshan Dhananjaya, <br></br>a software engineer.</h1>
+          <p className='text-lg font-semibold text-left text-white/50 md:text-center sm:text-center'>Welcome to the digital portfolio of Iroshan
+            Dhananjaya!<br/><br/> With 2.5 years of hands-on experience in software engineering, I specialize in
+            creating dynamic, user-focused digital solutions that bring ideas to life. My expertise spans web
+            development, web applications, and mobile app development, all crafted with precision and a commitment to
+            innovation. Beyond development, I thrive on problem-solving and enjoy tackling complex technical challenges
+            to deliver seamless, high-performing applications. Whether you’re looking to build a responsive website,
+            develop a robust web application, or create a user-friendly mobile app,<br/><br/> I am dedicated to helping
+            businesses
+            and individuals realize their digital potential.</p>
 
-            <Button className="bg-blue-700 text-white rounded-lg">Get In Touch</Button>
+          <Button className="bg-blue-700 text-white rounded-lg">Get In Touch</Button>
         </div>
           
         </div>

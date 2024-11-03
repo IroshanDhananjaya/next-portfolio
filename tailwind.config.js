@@ -21,7 +21,11 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/assets/def.jpg')",
+        'mobile-app': "url('/assets/mobile-app.jpg')",
+        'mobile-design': "url('/assets/mobile-design.jpg')",
+        'web-app': "url('/assets/web-app.jpg')",
+        'web-design': "url('/assets/web-design.jpg')",
+        'web-site-design': "url('/assets/web-site-design.jpg')",
       },
       colors: {
         primary: '#121214',
